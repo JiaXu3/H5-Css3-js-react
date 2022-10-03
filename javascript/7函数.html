@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1(a){
+            return 1;
+        }
+        const fun2 = function(b){
+            return 1;
+        }
+        console.log(typeof fun1);
+        console.log(fun1());
+        console.log(fun2);
+        console.log(fun2());
+        //立即执行函数
+        (function(a,b){
+            console.log(a+b);
+        })(10,1);
+        //arguments,this
+        function funa(a,b){
+            console.log(arguments);
+            console.log(this);
+        }
+        funa(1,2);
+    </script>
+</body>
+</html>

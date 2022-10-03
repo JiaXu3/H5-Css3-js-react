@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+<ul>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+</ul>
+<script>
+    //需求：让所有的input标签获取焦点后高亮显示
+
+    //1.获取事件源
+    var inpArr = document.getElementsByTagName("input");
+    //2.绑定事件
+    //3.书写事件驱动程序
+    // for (var i = 0; i < inpArr.length; i++) {
+    //     //获取焦点后，所有的input标签被绑定onfocus事件
+    //     inpArr[i].onfocus = function () {
+    //         this.style.border = "2px solid red";
+    //         this.style.backgroundColor = "#ccc";
+    //     }
+    //     //绑定onblur事件，取消样式
+    //     inpArr[i].onblur = function () {
+    //         this.style.border = "";
+    //         this.style.backgroundColor = "";
+    //     }
+    // }
+    let arr = [1,2,3,4];
+    arr.forEach(element => {
+        element += element;
+    });
+    console.log(arr);
+    arr.forEach((value,index,arr) =>{
+        arr[index] = value+1;
+    })
+    console.log(arr);
+
+    let arr2 = [1,35,7,9,4];
+    const arr3 = arr2.map(item => {
+        return item+1;
+    })
+    console.log(arr3);
+    console.log(arr2);
+    arr2.map((item,index,arr) => {
+        arr[index] = item+1;
+    })
+    console.log(arr2);
+
+    //重写程序
+    console.log(inpArr);
+    let arrNew = [...inpArr];
+    console.log( inpArr);
+    console.log(arrNew);
+    arrNew.forEach(item =>{
+        item += item;
+    })
+    for(let )
+    //     inpArr.forEach(item => {
+    //     item.onfocus = function () {
+    //         this.style.border = "2px solid red";
+    //         this.style.backgroundColor = "#ccc";
+    //     }
+    //     item.onblur = function () {
+    //         this.style.border = "";
+    //         this.style.backgroundColor = "";
+    //     }
+    //     return item;
+    // })
+</script>
+</body>
+</html>

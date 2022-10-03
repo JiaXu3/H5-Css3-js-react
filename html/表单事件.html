@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>baiodan</legend>
+            <input type="email" name="" id="txet1">
+        </fieldset>
+        <fieldset>
+            <legend>dhhdsh</legend>
+            <input type="submit">
+        </fieldset>
+        
+    </form>
+    
+    <!-- <form action="">    
+        <input type="email" name="" id="txet1"/>
+    </form> -->
+    
+    <script>
+        var tex1 = document.getElementById("txet1")
+        var num = 0
+        tex1.oninput = function(){  
+            num++
+            console.log(num)
+        }
+        tex1.oninvalid = function () {  //验证不通过时触发
+        this.setCustomValidity('亲，请输入正确哦');  //设置验证不通过时的提示文字
+    }
+    </script>
+</body>
+</html>

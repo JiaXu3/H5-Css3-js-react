@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            left: 100px;
+            top: 100px;
+            width: 308px;
+            height: 307px;
+            border: 20px solid red;
+        }
+        .box .dtc{
+            width: 52px;
+            height: 28px;
+            position: absolute;
+            top: -9px;
+            left: 13px;
+            background: url(http://img.smyhvae.com/20180116_1115.png);
+            background-position: -108px 0px;
+        }
+        .box .image img{
+            width: 308px;
+            height: 196px;
+        }
+        .box h4{
+            background-color: black;
+			color: white;
+			width:308px;
+			height: 40px;
+			line-height: 40px;
+			position: absolute;
+			top: 156px;
+            opacity: 20%;
+
+        }
+        .boxm{
+            position: absolute;
+            top: 400px;
+            left:50%;
+            margin-left: -150px;
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            /* margin: auto; */
+
+        }
+        .backtop{
+			position: fixed;
+			bottom: 100px;
+			right: 30px;
+			width: 60px;
+			height: 60px;
+			background-color: gray;
+			text-align: center;
+			line-height:30px;
+			color:white;
+			text-decoration: none;   /*去掉超链接的下划线*/
+		}
+    </style>
+</head>
+<body>
+    <div id="top">jsdhjahf</div>
+    <div class="box">
+        <div class="dtc"></div>
+        <div class="image"><img src="http://img.smyhvae.com/20180116_1116.jpg" alt=""></div>
+        <div>
+            <h4>广东深圳宝安区建安一路海雅缤纷城4楼</h4>
+        </div>
+    </div>
+    <div class="boxm"></div>
+    <div class="backtop"><a href="#top">返回顶部</a></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'sd-as-jjfjsf-ahd';
+       Sup(str);
+        // const fun = 
+        function Sup(str){
+            var array = str.split('-');
+            console.log(array);
+            // for(var i=1; i<array.length;i++)
+            // {
+            //     array[i] = array[i].slice(0,1).toUpperCase()+array[i].slice(1);
+            // }
+            var array1 = array.map(item =>{
+                return item.slice(0,1).toUpperCase()+item.slice(1);
+            })
+            console.log(array);
+            console.log(array1)
+            // str = array.toString();
+            // console.log(str);
+            // str = str.replace(/,/gi,'-');
+            // console.log(str);
+            str = array1.join('-');
+            console.log(str);
+        }
+        // fun(str);
+
+        arr2 = [11,'sdhj',13];
+        console.log(JSON.stringify(arr2));
+        var arr3 = JSON.stringify(arr2).split(',');
+        console.log(arr3);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function person(){
+        this.nama='wang'
+        name:'sdjf'
+       } 
+       person.prototype.age = 19;
+       var person1 = new person();
+       console.log(person1);
+
+       function student() {
+            stu:'stu'
+       }
+
+       student.prototype = new person();
+       student1 = new student();
+       console.log(student1);
+    </script>
+</body>
+</html>

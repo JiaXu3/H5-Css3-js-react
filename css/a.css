@@ -1,0 +1,33 @@
+mystyle{
+    background-color: blue;
+    font-size: larger;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid red;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    overflow: hidden;
+    border: 1px solid red;
+}
+#par{
+    color: blue;
+}
+p{
+    color: black;
+}
+.da{
+    font-size: large;
+}
+.col{
+    color: green;
+}
+.under{
+    text-decoration: overline;
+}
+.div1 p{
+    color:yellow;
+}

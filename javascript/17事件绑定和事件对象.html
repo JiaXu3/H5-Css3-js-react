@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点击</button>
+    <script>
+        //onclick绑定，后面的覆盖前面的
+        var btn = document.getElementsByTagName("button")[0];
+        btn.onclick = () => {
+            console.log('事件1');
+        }
+        btn.onclick = () => {
+            console.log('时间2');
+        }
+        //addElentLister
+        btn.addEventListener("click",() => {
+            console.log("事件3");
+        })
+        btn.addEventListener("click",() => {
+            console.log("事件4");
+            console.log(this);
+            console.log(event);
+        })
+    </script>
+</body>
+</html>
